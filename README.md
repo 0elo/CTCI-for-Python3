@@ -1,6 +1,6 @@
 # Cracking the Coding Interview for Python 3
 
-A little interview prep never hurt anyone. Questions will be answered by section using Python 3.6 via Jupyter Notebook. Beyond just providing solutions, I will be diving in depth by exploring multiple implementations and testing each to ensure efficiency. Chapters 12: Java, 13: C++, and 14: Databases will understandably be excluded.
+A little interview prep never hurt anyone. Questions will be answered by chapter using Python 3.6 via Jupyter Notebook. Beyond just providing solutions, I will be diving in depth by exploring multiple implementations and testing each to ensure efficiency. Chapters 12: Java, 13: C++, and 14: Databases will understandably be excluded.
 
 ### Completion Status
 
@@ -25,4 +25,4 @@ A little interview prep never hurt anyone. Questions will be answered by section
 
 ### Contributing
 
-Feel free to add to the chaos. Please only provide alternate solutions to problems that have already been solved (I want to do it first!).
+Feel free to add to the chaos. Please only provide alternate solutions to problems that have already been solved (I want to do them first!).
