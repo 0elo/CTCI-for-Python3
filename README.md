@@ -25,4 +25,4 @@ A little interview prep never hurt anyone. Questions will be answered by chapter
 
 ### Contributing
 
-Feel free to add to the chaos. Please only provide alternate solutions to problems that have already been solved (I want to do them first!).
+Feel free to add to the chaos, whether it be alternate solutions, tests, or issues with my code. Any little bit helps! If providing alternate solutions, please only do so for problems that have already been solved (I want to tackle them first!).
