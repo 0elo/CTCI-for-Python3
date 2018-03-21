@@ -1,6 +1,6 @@
 # Cracking the Coding Interview for Python 3
 
-A little interview prep never hurt anyone. This repo will solve questions from the 6th edition. Questions will be answered by chapter using Python 3.6 via Jupyter Notebook. Beyond just providing solutions, I will be diving in depth by exploring multiple implementations and testing each to ensure efficiency. Chapters 12: Java, 13: C++, and 14: Databases will understandably be excluded.
+A little interview prep never hurt anyone. This repo will solve questions from the 6th edition. Questions will be answered by chapter using Python 3.6 via Jupyter Notebook. Beyond just providing solutions, I will be diving in depth by exploring multiple implementations and testing each to ensure efficiency. Chapters 12: Java, 13: C++, and 14: Databases will understandably be excluded. I'd encourage any observers to tackle the problems on their own first before looking at the implementations, as memorization of these solutions will only be detrimental to your growth.
 
 Support *Cracking the Coding Interview: 189 Programming Questions and Solutions, 6th Edition* by Gayle Laakmann McDowell by buying the book on [Amazon](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1521267378&sr=8-1&keywords=ctci).
 
@@ -11,12 +11,12 @@ Support *Cracking the Coding Interview: 189 Programming Questions and Solutions,
 
 ### Completion Status
 
-| Section                                      | Start Date | Status      | Completion Date |
+| Section                                                                                                                       | Start Date | Status      | Completion Date |
 |:----------------------------------------------------------------------------------------------------------------------------- |:---------- |:----------  |:--------------- |
 | [Chapter 1: Arrays and Strings](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_one.ipynb)                  | 03/16/2018 | In Progress |                 |
-| [Chapter 2: Linked Lists](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_two.ipynb)                        |            |             |                 |
+| [Chapter 2: Linked Lists](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_two.ipynb)                        | 03/19/2018 | In Progress |                 |
 | [Chapter 3: Stacks and Queues](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_three.ipynb)                 |            |             |                 |
-| [Chapter 4: Trees and Graphs](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_four.ipynb)                   |            |             |                 |
+| [Chapter 4: Trees and Graphs](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_four.ipynb)                   | 03/21/2018 | In Progress |                 |
 | [Chapter 5: Bit Manipulation](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_five.ipynb)                   |            |             |                 |
 | [Chapter 6: Math and Logic Puzzles](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_six.ipynb)              |            |             |                 |
 | [Chapter 7: Object-Oriented Design](https://github.com/0elo/CTCI-for-Python3/blob/master/ctci_chapter_seven.ipynb)            |            |             |                 |
