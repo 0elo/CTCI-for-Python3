@@ -1,1 +1,9 @@
+# Visual Studio files #
+#######################
+Debug/
+.vs/
+*.vcxproj.user
+
+# Jupyter Notebook #
+####################
 .ipynb_checkpoints/
