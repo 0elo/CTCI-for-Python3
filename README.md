@@ -1,4 +1,4 @@
-# Cracking the Coding Interview for Python 3
+# Cracking the Coding Interview, 6th Edition
 
 A little interview prep never hurt anyone. This repo will solve questions from the 6th edition.
 
