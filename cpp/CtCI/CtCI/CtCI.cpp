@@ -4,6 +4,8 @@
 #include "pch.h"
 #include <iostream>
 
+#include "chapter_one.h"
+
 int main()
 {
     std::cout << "Hello World!\n"; 
