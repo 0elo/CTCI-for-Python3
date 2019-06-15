@@ -23,6 +23,7 @@ public:
 	bool checkPermutation_count(std::string &str1, std::string &str2);
 
 	// 1.3 URLify
+	void urlify(char *str, int len);
 
 	// 1.4 Palindrome Permutation
 

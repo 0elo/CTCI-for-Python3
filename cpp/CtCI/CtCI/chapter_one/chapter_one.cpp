@@ -102,6 +102,37 @@ bool ChapterOne::checkPermutation_count(string &str1, string &str2) {
 	return accumulate(char_counts, char_counts + 128, 0);
 }
 
+/* 1.3 URLify
+ * Write a method to replace all spaces in a string with '%20'. You may assume
+ * that the string has sufficient space at the end to hold the additional
+ * characters, and that you are given the "true" length of the string.
+ */
+
+void ChapterOne::urlify(char *str, int true_len) {
+
+	int j, new_len, num_spaces = 0;
+
+	for (int i = 0; i < true_len; i++) {
+		if (str[i] == ' ') {
+			num_spaces++;
+		}
+	}
+
+	new_len = true_len + (2 * num_spaces);
+	j = new_len - 1;
+
+	for (int i = true_len - 1; i >= 0; i--) {
+		if (str[i] == ' ') {
+			str[j--] = '0';
+			str[j--] = '2';
+			str[j--] = '%';
+		}
+		else {
+			str[j--] = str[i];
+		}
+	}
+}
+
 void ChapterOne::test() {
 
 	cout << "Chapter 1 | Arrays and Strings" << endl << endl;
@@ -140,4 +171,18 @@ void ChapterOne::test() {
 	assert(false == checkPermutation_sort(permutation_string, unique_string));
 	assert(false == checkPermutation_count(permutation_string, unique_string));
 
+	cout << endl;
+
+	// 1.3 URLify
+	cout << "1.3 URLify:" << endl << "Write a method to replace all spaces in a "
+		"string with '%20'. You may assume that the string has sufficient space at "
+		"the end to hold the additional characters, and that you are given the 'true' "
+		"length of the string." << endl << endl;
+
+	char url_string[] = "Mr John Smith    ";
+	cout << "Actual string: " << url_string << endl;
+	urlify(url_string, 13);
+	cout << "URLified string: " << url_string << endl;
+
+	// 1.4 Palindrome Permutation
 }
