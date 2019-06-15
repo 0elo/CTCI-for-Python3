@@ -67,29 +67,77 @@ bool ChapterOne::isUnique_noDS(const string &str) {
  * of the other
  */
 
+bool ChapterOne::checkPermutation_sort(string &str1, string &str2) {
+	
+	if (str1.length() != str2.length()) return false;
 
+	sort_string(str1);
+	sort_string(str2);
+
+	// Sort strings and return string comparison
+
+	return str1.compare(str2) == 0;
+}
+
+bool ChapterOne::checkPermutation_count(string &str1, string &str2) {
+
+	if (str1.length() != str2.length()) return false;
+
+	// Assume 128 ASCII char set
+	int char_counts[128] = { 0 };
+
+	for (size_t i = 0; i < str1.length(); i++) {
+		char_counts[str1[i]]++;
+	}
+
+	for (size_t i = 0; i < str2.length(); i++) {
+		char_counts[str2[i]]++;
+
+		if (char_counts[str2[i]] < 0) {
+			cout << "Offending character: " << str1[i] << endl;
+			return false;
+		}
+	}
+
+	return accumulate(char_counts, char_counts + 128, 0);
+}
 
 void ChapterOne::test() {
 
-	std::cout << "Chapter 1 | Arrays and Strings" << std::endl << std::endl;
+	cout << "Chapter 1 | Arrays and Strings" << endl << endl;
 
 	// 1.1 Is Unique
-	std::cout << "1.1 Is Unique: Implement an algorithm to determine if "
-		"a string has all unique characters. What if you cannot use "
-        "additional data structures?" << std::endl << std::endl;
+	cout << "1.1 Is Unique:" << endl << "Implement an algorithm to "
+		"determine if a string has all unique characters. What if you "
+        "cannot use additional data structures?" << endl << endl;
 	
-	std::string unique_string = "abcdefgh1234567890jklmnopqrstuvwxyz";
-	std::string not_unique_string = unique_string + "xdxdxd";
+	string unique_string = "abcdefgh1234567890jklmnopqrstuvwxyz";
+	string not_unique_string = unique_string + "xdxdxd";
 
-	std::cout << "Testing with unique string: " << unique_string << std::endl;
-	assert(isUnique_vector(unique_string) == true);
-	assert(isUnique_bitset(unique_string) == true);
-	assert(isUnique_noDS(unique_string) == true);
-	std::cout << "Testing with not unique string:" << not_unique_string << std::endl;
-	assert(isUnique_vector(not_unique_string) == false);
-	assert(isUnique_bitset(not_unique_string) == false);
-	assert(isUnique_noDS(not_unique_string) == false);
+	cout << "Testing with unique string: " << unique_string << endl;
+	assert(true == isUnique_vector(unique_string));
+	assert(true == isUnique_bitset(unique_string));
+	assert(true == isUnique_noDS(unique_string));
+	cout << "Testing with not unique string:" << not_unique_string << endl;
+	assert(false == isUnique_vector(not_unique_string));
+	assert(false == isUnique_bitset(not_unique_string));
+	assert(false == isUnique_noDS(not_unique_string));
 
+	cout << endl;
 
+	// 1.2 Check Permutation
+	cout << "1.2 Check Permutation:" << endl << "Given two strings, write a method "
+		"to decide if one is a permutation of the other." << endl << endl;
+
+	string permutation_string = "xdxdxd" + unique_string;
+
+	cout << "Testing with two strings that are permutations: " << permutation_string <<
+		", " << not_unique_string << endl;
+	assert(true == checkPermutation_sort(permutation_string, not_unique_string));
+	assert(true == checkPermutation_count(permutation_string, not_unique_string));
+	cout << "Testing with two strings that are not permutations: " << permutation_string <<
+		", " << unique_string << endl;
+	assert(false == checkPermutation_sort(permutation_string, unique_string));
+	assert(false == checkPermutation_count(permutation_string, unique_string));
 
 }
