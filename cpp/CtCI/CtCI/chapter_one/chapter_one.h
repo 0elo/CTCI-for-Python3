@@ -1,5 +1,5 @@
-#ifndef CHAPTER_ONE_H_
-#define CHAPTER_ONE_H_
+#ifndef CHAPTER_ONE_H
+#define CHAPTER_ONE_H
 
 #include <string>
 #include <vector>
@@ -10,6 +10,7 @@
 
 #include <assert.h> // For testing
 
+// Arrays and Strings
 class ChapterOne {
 public:
 

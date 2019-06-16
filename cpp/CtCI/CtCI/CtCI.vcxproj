@@ -153,10 +153,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="chapter_one\chapter_one.h" />
+    <ClInclude Include="chapter_three\chapter_three.h" />
+    <ClInclude Include="chapter_two\chapter_two.h" />
+    <ClInclude Include="chapter_two\node.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chapter_one\chapter_one.cpp" />
+    <ClCompile Include="chapter_three\chapter_three.cpp" />
+    <ClCompile Include="chapter_two\chapter_two.cpp" />
     <ClCompile Include="CtCI.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

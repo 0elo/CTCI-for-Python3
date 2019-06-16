@@ -21,6 +21,15 @@
     <ClInclude Include="chapter_one\chapter_one.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="chapter_two\chapter_two.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter_two\node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter_three\chapter_three.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -30,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="chapter_one\chapter_one.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter_two\chapter_two.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter_three\chapter_three.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
